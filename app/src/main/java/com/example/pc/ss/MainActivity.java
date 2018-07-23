@@ -8,7 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
-   // Button button4;
+    Button button6;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +19,16 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-// na tip1 slagash imeto na novata stanica
                 startActivity(new Intent(MainActivity.this, tip1.class));
-
             }
         });
 
-
+        button6 = findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, login1.class));
+            }
+        });
     }
 }
