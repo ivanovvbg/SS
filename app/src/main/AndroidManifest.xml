@@ -32,6 +32,7 @@
             android:name=".login"
             android:label="@string/title_activity_login" />
         <activity android:name=".login1" />
+        <activity android:name=".OptionMenu"></activity>
     </application>
 
 </manifest>
