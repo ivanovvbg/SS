@@ -23,4 +23,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="about">nigga</string>
+    <string name="logout">nigg1a</string>
+    <string name="setting">Setting</string>
+    <string name="menu_action_setting">Setting</string>
+    <string name="menu_action_about_us">About us</string>
 </resources>
