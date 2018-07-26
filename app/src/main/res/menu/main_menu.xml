@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id='@+id/settings_id'
-        android:title="Settings"
+        android:id='@+id/login_id'
+        android:title="Login"
         android:showAsAction="always"
         />
 
     <item
-        android:id='@+id/about_us_id'
-        android:title="About Us"
+        android:id='@+id/profil_id'
+        android:title="Profil"
         android:showAsAction="always"
         />
 

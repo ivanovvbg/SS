@@ -13,8 +13,7 @@ import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
     Button button;
-    Button button6;
-    Button button7;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,20 +27,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button6 = findViewById(R.id.button6);
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, login1.class));
-            }
-        });
-        button7 = findViewById(R.id.button7);
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, OptionMenu.class));
-            }
-        });
 
+
+
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.main_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case R.id.login_id:
+                startActivity(new Intent(MainActivity.this, login1.class));
+                break;
+            case R.id.profil_id:
+                startActivity(new Intent(MainActivity.this, profil.class));
+                // another startActivity, this is for item with id "menu_item2"
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+        return true;
     }
 }

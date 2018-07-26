@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class login1 extends AppCompatActivity {
     // These are the global variables
@@ -55,4 +56,4 @@ public class login1 extends AppCompatActivity {
             }
         });
     }
-}
+    }
